@@ -23,10 +23,10 @@ Cloud MySQL Database Setup
 Database Connection with SQL Alchemy
 
 ### Lesson 4 - Dynamic Database Driven Web Pages
-Display DB data on Web Page
+Display DB data on Web Page   
 Dynamic Database-Driven Pages
 
 ### Lesson 5 - Using HTML Forms to Capture Data
-HTML form for Applications
-Saving Applications to DB
+HTML form for Applications   
+Saving Applications to DB   
 Summary and Future Work
