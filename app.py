@@ -1,11 +1,11 @@
 from flask import Flask
+from flask import render_template
+
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-  welcome = 'Oh, hi!'
-
-  return welcome
+  return render_template('home.html')
 
 app.run(host='0.0.0.0',debug=True)
