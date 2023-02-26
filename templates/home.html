@@ -17,12 +17,16 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="text-center mt-2 mb-4">Careers website</h1>
+      <h1 class="text-center mt-2 mb-4">{{company_name}} careers</h1>
       <img src="/static/clark-tibbs-banner.jpg" class="img-fluid" id="banner"/>
       <h2 class="text-center mt-2">About Careers</h2>
       <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam purus sit amet luctus venenatis lectus magna. Mi quis hendrerit dolor magna eget. Hendrerit gravida rutrum quisque non tellus orci. Pharetra massa massa ultricies mi quis hendrerit dolor magna. Erat velit scelerisque in dictum non consectetur a erat. Duis at consectetur lorem donec. Auctor urna nunc id cursus metus. Nec dui nunc mattis enim ut tellus. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Libero enim sed faucibus turpis in eu mi.</p>
-      <h2 class="text-center">Open Positions</h2>
-      <p>TODO Add open positions here</p>
+      <h2 class="text-center mb-3">Open Positions</h2>
+      <div>
+        {% for job in jobs %}
+          {% include 'jobitem.html' %}
+        {% endfor %}
+      </div>
       <div class="text-center">
         <button class="btn btn-primary btn-lg">Contact Us</button>
         <p class="mt-4">Copyright 2023, AlexB</p>
