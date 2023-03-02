@@ -40,4 +40,20 @@ def index():
 def jobs():
   return jsonify(JOBS)
 
+
+@app.route('/learn')
+def learn():
+  return render_template('learn.html')
+
+
+@app.route('/events')
+def events():
+  return render_template('events.html')
+
+
+@app.route('/about')
+def about():
+  return render_template('about.html')
+
+
 app.run(host='0.0.0.0',debug=True)
